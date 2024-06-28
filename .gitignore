@@ -1,0 +1,28 @@
+# Terraform files
+*.tfstate
+*.tfstate.backup
+*.tfvars
+crash.log
+*.log
+.terraform/
+.terraform.lock.hcl
+
+# Directory for Terraform plan files
+*.tfplan
+
+# Local settings
+*.bak
+*.backup
+*.old
+*.swp
+*.tmp
+
+# IDE specific files
+.vscode/
+.idea/
+*.iml
+
+# Sensitive files
+terraform.tfvars
+secrets.auto.tfvars
+*.auto.tfvars
