@@ -1,28 +1,31 @@
-# Terraform files
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
 *.tfstate
-*.tfstate.backup
-*.tfvars
+*.tfstate.*
+
+# Crash log files
 crash.log
-*.log
-.terraform/
-.terraform.lock.hcl
 
-# Directory for Terraform plan files
-*.tfplan
+# Exclude .tfvars files that are likely to contain sensitive data, such as passwords, private keys, and other secrets
+*.tfvars
 
-# Local settings
-*.bak
-*.backup
-*.old
-*.swp
-*.tmp
+# Ignore override files as they are usually used to override resources locally and so are not checked in
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
 
-# IDE specific files
+# Include override files you do wish to add to version control using negated pattern
+# !example_override.tf
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ignore your editor specific files
 .vscode/
 .idea/
-*.iml
-
-# Sensitive files
-terraform.tfvars
-secrets.auto.tfvars
-*.auto.tfvars
+*.swp
+*.swo
